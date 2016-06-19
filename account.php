@@ -7,7 +7,7 @@
 
 <head>
     <!-- page title -->
-    <title>MirageWoW - Index</title>
+    <title>MirageWoW - Account</title>
 
     <!-- header settings -->
     <?php include "./php_components/header_settings.php";?>
@@ -21,7 +21,7 @@
     <?php include "./php_components/jumbotron.php";?>
 
     <!-- page content -->
-    <p></p>
+    <?php include "./php_components/account_panel.php";?>
 
     <!-- footer -->
     <?php include "./php_components/footer_bar.php";?>

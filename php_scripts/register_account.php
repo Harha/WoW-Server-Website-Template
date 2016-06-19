@@ -1,7 +1,7 @@
 <?php
 
   // Includes
-  $config = include("sql_config.php");
+  $sql_config = include("sql_config.php");
   $functions = include("functions.php");
 
   // Get form data
@@ -32,7 +32,7 @@
   }
 
   // Create the SQL connection
-  $mysqli = mysqli_connect($config["sql_host"], $config["sql_username"], $config["sql_password"], $config["sql_database"]);
+  $mysqli = mysqli_connect($sql_config["sql_host"], $sql_config["sql_username"], $sql_config["sql_password"], $sql_config["sql_database"]);
 
   // Redirect with error message if connection to db failed
   if (mysqli_connect_errno())

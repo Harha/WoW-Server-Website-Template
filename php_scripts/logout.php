@@ -1,6 +1,8 @@
 <?php
 
-  session_start();
+  // Start a session
+  if (session_id() == "")
+    session_start();
 
   if (session_destroy())
   {

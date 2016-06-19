@@ -8,38 +8,23 @@ body {
   background-size: cover;
 }
 
-/* vertically center things */
-.vertical-center-100 {
-  position: relative;
-  top: 50%;
-  transform: translateY(100%);
-  width: 100%;
-  margin: 0 auto;
+/* fix the footer */
+.navbar-static-bottom {
+  margin: 0px;
 }
 
-/* vertically center things */
-.vertical-center-75 {
-  position: relative;
-  top: 50%;
-  transform: translateY(75%);
-  width: 100%;
-  margin: 0 auto;
-}
+/* bootstrap jumbotron background */
+.jumbotron-miragewow {
+  background-color: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/background_jumbotron_0.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-/* vertically center things */
-.vertical-center-50 {
-  position: relative;
-  top: 50%;
-  transform: translateY(50%);
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* vertically center things */
-.vertical-center-25 {
-  position: relative;
-  top: 50%;
-  transform: translateY(25%);
-  width: 100%;
-  margin: 0 auto;
+  margin-top: 52px;
+  color: #fff;
+  color: rgba(255, 255, 255, .75);
+  background-color: rgba(0, 0, 0, .75);
+  border-radius: 0px;
 }

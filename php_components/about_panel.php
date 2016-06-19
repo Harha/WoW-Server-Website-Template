@@ -10,11 +10,11 @@
 
                 <!-- panel body -->
                 <div class="panel-body">
-                  <strong>server patch:</strong><span> 1.12.1 (vanilla)</span>
+                  <strong>Server patch:</strong><span> 1.12.1 (vanilla)</span>
                   </BR>
-                  <strong>server rates:</strong><span> 5x experience, 2.5x drop, 2.5x honor</span>
+                  <strong>Server rates:</strong><span> 5x experience, 2.5x drop, 2.5x honor</span>
                   </BR>
-                  <strong>realmlist (realmlist.wtf):</strong><span> set realmlist miragewow.us.to</span>
+                  <strong>Realmlist (realmlist.wtf):</strong><span> set realmlist miragewow.us.to</span>
                 </div>
 
                 <!-- panel footer -->

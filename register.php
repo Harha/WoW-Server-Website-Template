@@ -17,6 +17,9 @@
     <!-- navigation bar -->
     <?php include "./php_components/navigation_bar.php";?>
 
+    <!-- jumbotron -->
+    <?php include "./php_components/jumbotron.php";?>
+
     <!-- registration form -->
     <?php include "./php_components/registration_form.php";?>
 

@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 /* configure site background image */
 body {
   background-color: transparent;
@@ -6,17 +11,25 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-bottom: 60px;
 }
 
 /* fix the footer */
 .navbar-static-bottom {
   margin: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 54px;
+  background-color: #f5f5f5;
+  border-radius: 0px;
 }
 
 /* bootstrap jumbotron background */
 .jumbotron-miragewow {
   background-color: transparent;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/background_jumbotron_0.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.50)), url(../images/background_jumbotron_0.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -1,8 +1,8 @@
 <?php
 
   // Includes
-  $sql_config = include("sql_config.php");
-  $functions = include("functions.php");
+  $sql_config = include(__DIR__ . "/sql_config.php");
+  $functions = include(__DIR__ . "/functions.php");
 
   // Get form data
   $username = $_POST["username"];

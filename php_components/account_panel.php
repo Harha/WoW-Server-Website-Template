@@ -1,4 +1,4 @@
-<?php include "./php_scripts/get_account_info.php";?>
+<?php include __DIR__ . "/../php_scripts/get_account_info.php";?>
 
 <div class="container">
     <div class="row">

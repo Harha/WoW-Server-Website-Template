@@ -2,7 +2,7 @@
 
   // Includes
   if (isset($sql_config) == false)
-    $sql_config = include("sql_config.php");
+    $sql_config = include(__DIR__ . "/sql_config.php");
 
   // Start a session
   if (session_id() == "")

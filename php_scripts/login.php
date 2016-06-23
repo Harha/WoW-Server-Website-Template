@@ -1,8 +1,8 @@
 <?php
 
   // Includes
-  $config = include("sql_config.php");
-  $functions = include("functions.php");
+  $config = include(__DIR__ . "/sql_config.php");
+  $functions = include(__DIR__ . "/functions.php");
 
   // Start a session
   if (session_id() == "")

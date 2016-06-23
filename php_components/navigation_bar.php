@@ -3,7 +3,7 @@
 
         <a href="./index.php" class="navbar-brand">MirageWoW</a>
 
-        <p class="navbar-text pull-left"><?php include "./php_scripts/serverstatus.php";?></p>
+        <p class="navbar-text pull-left"><?php include __DIR__ . "/../php_scripts/serverstatus.php";?></p>
 
         <?php if (isset($_SESSION["username"]) && $_SESSION["username"] == true) : ?>
           <p class="navbar-text pull-right">Logged in as: <?php echo $_SESSION["username"]; ?></p>

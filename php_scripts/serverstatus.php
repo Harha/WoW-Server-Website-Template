@@ -1,10 +1,10 @@
 <?php
 
   // Includes
-  $srv_config = include("srv_config.php");
+  $srv_config = include(__DIR__ . "/srv_config.php");
 
   // Check if the result is cached, echo contents if true, lifetime 60 seconds
-  $cachedFile = "./cache/serverstatus";
+  $cachedFile = __DIR__ . "/../cache/serverstatus";
   if (file_exists($cachedFile) && time() - 60 < filemtime($cachedFile))
   {
     echo file_get_contents($cachedFile);

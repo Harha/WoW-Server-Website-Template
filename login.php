@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<?php include "./php_scripts/measure_pagegen_time_start.php";?>
-<?php include "./php_scripts/session.php";?>
+<?php include __DIR__ . "/php_scripts/measure_pagegen_time_start.php";?>
+<?php include __DIR__ . "/php_scripts/session.php";?>
 
 <html lang="en">
 
@@ -9,25 +9,28 @@
     <!-- page title -->
     <title>MirageWoW - Login</title>
 
-    <!-- header settings -->
-    <?php include "./php_components/header_settings.php";?>
+    <!-- metadata includes -->
+    <?php include __DIR__ . "/php_components/metadata_includes.php";?>
+
+    <!-- stylesheet includes -->
+    <?php include __DIR__ . "/php_components/stylesheet_includes.php";?>
 </head>
 
 <body>
     <!-- navigation bar -->
-    <?php include "./php_components/navigation_bar.php";?>
+    <?php include __DIR__ . "/php_components/navigation_bar.php";?>
 
     <!-- jumbotron -->
-    <?php include "./php_components/jumbotron.php";?>
+    <?php include __DIR__ . "/php_components/jumbotron.php";?>
 
     <!-- login form -->
-    <?php include "./php_components/login_form.php";?>
+    <?php include __DIR__ . "/php_components/login_form.php";?>
 
     <!-- footer -->
-    <?php include "./php_components/footer_bar.php";?>
+    <?php include __DIR__ . "/php_components/footer_bar.php";?>
 
     <!-- javascript includes -->
-    <?php include "./php_components/javascript_includes.php";?>
+    <?php include __DIR__ . "/php_components/javascript_includes.php";?>
 </body>
 
 </html>

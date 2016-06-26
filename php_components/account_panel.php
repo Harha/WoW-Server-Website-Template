@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 col-md-offset-1 col-sm-9 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-            <div class="panel panel-default">
+            <div class="panel panel-inverse">
 
                 <!-- panel header -->
                 <div class="panel-heading">
@@ -80,6 +80,7 @@
     </div>
 </div>
 
+<?php /* TODO: Possibility to change account email / password.
 <div class="container">
     <div class="row">
         <div class="col-md-9 col-md-offset-1 col-sm-9 col-sm-offset-1 col-xs-9 col-xs-offset-1">
@@ -153,3 +154,4 @@
         </div>
     </div>
 </div>
+*/ ?>

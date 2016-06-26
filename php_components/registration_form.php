@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row vertical-center-50">
         <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-9 col-xs-offset-1">
-            <div class="panel panel-default">
+            <div class="panel panel-inverse">
 
                 <!-- panel header -->
                 <div class="panel-heading">

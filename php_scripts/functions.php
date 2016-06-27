@@ -16,16 +16,9 @@
   }
 
   // Function: Redirect user with a message or without
-  function redirect($location, $message)
+  function redirect($location, $title, $message)
   {
-    if (is_null($message) === false)
-    {
-      header("Location: " . $location . "?message=" . $message);
-    }
-    else
-    {
-      header("Location: " . $location);
-    }
+    header("Location: " . $location . "?title=" . $title . "&message=" . $message);
   }
 
 ?>

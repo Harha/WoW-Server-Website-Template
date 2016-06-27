@@ -18,7 +18,7 @@
   // Redirect with error message if connection to db failed
   if (mysqli_connect_errno())
   {
-    redirect("../login.php", "Error: Can't connect to the target SQL database.");
+    redirect("../status.php", "Error during login", "Error: Can't connect to the target SQL database. <a href='./login.php'>Go back</a>");
     exit();
   }
 
@@ -36,14 +36,14 @@
     }
     else
     {
-      redirect("../login.php", "Error: Invalid username or password.");
+      redirect("../status.php", "Error during login", "Error: Invalid username or password. <a href='./login.php'>Go back</a>");
     }
 
     mysqli_free_result($result);
   }
   else
   {
-    redirect("../login.php", "Error: Failed to execute an SQL statement! Please contact site administrators.");
+    redirect("../status.php", "Error during login", "Error: Failed to execute an SQL statement! Please contact site administrators. <a href='./login.php'>Go back</a>");
   }
 
   // Close the SQL connection

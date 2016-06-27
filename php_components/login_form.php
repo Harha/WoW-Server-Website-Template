@@ -24,7 +24,7 @@
                         <div class="form-group" id="form-password">
                             <label class="col-sm-3 control-label" for="password">Password:</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="password" name="password" placeholder="Account password" minlength="8" required>
+                                <input class="form-control" type="password" name="password" placeholder="Account password" required>
                             </div>
                         </div>
 

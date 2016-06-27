@@ -13,14 +13,14 @@
   // Check if form input is valid
   if (check_for_symbols($username) == true || check_for_symbols($password) == true || check_for_symbols($password_repeat) == true)
   {
-    redirect("../register.php", "Error: Your username or password contains invalid characters.");
+    redirect("../status.php", "Error during registration", "Error: Your username or password contains invalid characters. <a href='./register.php'>Go back</a>");
     exit();
   }
 
   // Check if passwords match
   if (strcmp($password, $password_repeat) !== 0)
   {
-    redirect("../register.php", "Error: Passwords did not match.");
+    redirect("../status.php", "Error during registration", "Error: Passwords did not match. <a href='./register.php'>Go back</a>");
     exit();
   }
 
@@ -28,7 +28,8 @@
   $password_length = strlen($password);
   if ($password_length < 6 || $password_length > 16)
   {
-    redirect("../register.php", "Error: Password length must be in between 6 to 16 characters.");
+    redirect("../status.php", "Error during registration", "Error: Password length must be in between 6 to 16 characters. <a href='./register.php'>Go back</a>");
+    exit();
   }
 
   // Create the SQL connection
@@ -37,7 +38,7 @@
   // Redirect with error message if connection to db failed
   if (mysqli_connect_errno())
   {
-    redirect("../register.php", "Error: Can't connect to the target SQL database.");
+    redirect("../status.php", "Error during registration", "Error: Can't connect to the target SQL database. <a href='./register.php'>Go back</a>");
     exit();
   }
 
@@ -47,7 +48,7 @@
   {
     if ($result->num_rows != 0)
     {
-      redirect("../register.php", "Error: an Account with that name already exists.");
+      redirect("../status.php", "Error during registration", "Error: an Account with that name already exists. <a href='./register.php'>Go back</a>");
       exit();
     }
 
@@ -59,12 +60,12 @@
   $q_email = mysqli_escape_string($mysqli, $email);
   if ($result = mysqli_query($mysqli, "INSERT INTO account (username, sha_pass_hash, email) VALUES ('$q_username', '$q_password', '$q_email')"))
   {
-    redirect("../register.php", "Registration successful!");
+    redirect("../status.php", "Registration successful!", "Success: The registration was completeted successfully. You can now login to play or view/edit your account information. <a href='./register.php'>Go back</a>");
     mysqli_free_result($result);
   }
   else
   {
-    redirect("../register.php", "Error: Couldn't insert the new account into target database! Please contact site administrators.");
+    redirect("../status.php", "Error during registration", "Error: Couldn't insert the new account into target database! Please contact site administrators. <a href='./register.php'>Go back</a>");
   }
 
   // Close the SQL connection
